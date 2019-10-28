@@ -12,13 +12,13 @@ Global-to-Local Generative Model for 3D Shapes
 
 [论文链接](https://vcc.tech/file/upload_file/image/research/att201809231254/G2L.pdf)
 
-<!--more-->
-
 ## Introduction
 
 对抗生成网络（GAN）在非常多的领域中被广泛应用，并取得了非常好的效果，通常来说，GAN能够很好地从类的分布中取样，但是对细节的生成不够好。而对于3D Shape来说，GAN虽然能够很好地生成三维模型的结构，但是很难生成好的几何细节。
 
 在这篇论文中，作者提出了一种Global to Local(G2L)的生成模型用于生成3D Shape，这一模型首先通过对抗生成网络去生成全局的结构以及局部的标签，之后，全局的判别器用于区分真实与生成的3D Shape，而局部的判别器用于区分局部的每一部分，最后，再通过条件自编码器去提高局部部分的生成质量。同时，作者通过进一步优化额外的两类loss去保证模型生成的效果，第一，尽量保证每一个部分中体素的标签尽可能统一，第二，尽量保证生成模型的表面是平滑的。
+
+<!--more-->
 
 ## The Overview of G2L
 
