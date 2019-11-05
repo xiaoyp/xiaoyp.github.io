@@ -43,7 +43,7 @@ pwa:
 
 # Highlight theme
 # ---------------
-highlight_theme: ocean
+highlight_theme: default
 
 # code_word_wrap: true or false
 
@@ -73,7 +73,7 @@ algolia_search:
     hits_stats: "${hits} results found in ${time} ms"
 
 # Local search
-# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/third-party-support?id=local-search
+# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/third-party-support.html#local-search
 # ---------------
 local_search:
   enable: true
@@ -82,13 +82,14 @@ local_search:
     hits_empty: "We didn't find any results for the search: ${query}"
 
 # MathJax
-# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/third-party-support?id=mathjax
+# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/third-party-support.html#mathjax
 # ---------------
 mathjax:
   enable: false
   cdn: https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # KaTeX
+# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/third-party-support.html#katex
 # ---------------
 katex:
   enable: true
@@ -113,8 +114,8 @@ tencent_analytics:
 # ---------------
 stylesheets:
   - /css/index.css
-  # scripts loaded in the end of the body
-  # ---------------
+# scripts loaded in the end of the body
+# ---------------
 scripts:
   - /js/utils.js
   - /js/fancybox.js
@@ -125,8 +126,8 @@ scripts:
   - /js/scroll.js
   - /js/head.js
 
-  # cdn for third-party library
-  # ---------------
+# cdn for third-party library
+# ---------------
 cdn:
   css:
     fontawesome: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
@@ -144,12 +145,14 @@ avatar: /img/Avatar.jpg
 
 top_img: /img/timg.jpg # false or url of img
 
+top_img_height: 60 # best range: 60 - 100
+
 post_meta:
   date_type: created # created or updated
   categories: true
   tags: true
 
-# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/additional-package-support?id=word-counting
+# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/additional-package-support.html#word-counting
 wordcount:
   enable: true
 
@@ -162,9 +165,9 @@ post_copyright:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/theme-config?id=auto-excerpt
+# Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/theme-config.html#auto-excerpt
 auto_excerpt:
-  enable: true
+  enable: false
   length: 150
 
 # slide
@@ -178,8 +181,8 @@ slide:
   mouseWheel: false
   transition: slide
   transitionSpeed: default
-  parallaxBackgroundImage: ''
-  parallaxBackgroundSize: ''
+  parallaxBackgroundImage: ""
+  parallaxBackgroundSize: ""
   parallaxBackgroundHorizontal: null
   parallaxBackgroundVertical: null
 
@@ -198,8 +201,8 @@ addThis:
   enable: false
   #pubid:
 
-sharejs:
-  enable: true
+# sharejs:
+# enable: false
 # disabled_sites:
 
 # Comments System
@@ -245,7 +248,7 @@ gitalk:
 # ---------------
 since: 2019
 
-footer_custom_text: Hi, welcome to my <a = href="https://xiaoyp.github.io">blog</a>
+footer_custom_text: Hi, welcome to my <a href="https://xiaoyp.github.io">blog</a>
 
 ICP:
   enable: false
@@ -279,15 +282,18 @@ canvas_ribbon:
 
 # Sidebar Settings
 # ---------------
-#links_title: Links
-#links:
-#GeometryLearning: http://www.geometrylearning.com/
+# links_title: Links
+# links:
+# Name: url
 
 # Follow Me Button
 # follow:
 #   enable: true
 #   url: ''
 #   text: ''
+
+# controls the sidebar showing or hidden in different pages
+sidebar_display: post # all/index/post/index-none/post-none/hidden
 
 # Ads
 # ---------------
@@ -297,7 +303,6 @@ google_adsense:
   js: //pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client: ca-pub-...........
   enable_page_level_ads: true
-  
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -321,3 +326,6 @@ qihu_site_verification:
 
 # avoid baidu transformation
 disable_baidu_transformation: true
+
+# 404 Page SubTitle
+404Text:
