@@ -55,6 +55,7 @@ social:
 #icon_name fa: url
 #icon_name fab: url
   github fa: https://github.com/xiaoyp
+  envelope-o fa: mailto:xiaoypgk@gmail.com
   
   cdn:
     css:
@@ -167,7 +168,7 @@ post_copyright:
 
 # Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/theme-config.html#auto-excerpt
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # slide
@@ -282,9 +283,9 @@ canvas_ribbon:
 
 # Sidebar Settings
 # ---------------
-# links_title: Links
-# links:
-# Name: url
+links_title: Links
+links:
+  GeometryLearning: http://www.geometrylearning.com
 
 # Follow Me Button
 # follow:

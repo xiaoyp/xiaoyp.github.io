@@ -1,9 +1,9 @@
 ---
-title: SIGGRAPH18 Global-to-Local Generative Model
+title: TOG2019 Global-to-Local Generative Model
 date: 2019-10-26 20:13:27
 tags: 
     - voxel grids
-category: SIGGRAPH
+category: TOG
 ---
 
 ## 参考论文
