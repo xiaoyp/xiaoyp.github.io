@@ -7,11 +7,14 @@ date: 2019-11-06 14:57:32
 ---
 
 
+
 ## 体素（Voxel Grids）
 
 ### （2016 ECCV）Learning a predictable and generative vector representation for objects （[论文链接](https://arxiv.org/pdf/1603.08637.pdf)）
 
 论文提出了TL-embedding Network，给出了一种对三维模型的表示，这一表示既能够用于三维模型的生成，也能够从二维图像中提取出来。网络结构分为两个部分，第一部分为自动编码器，得到三维模型的embeddings；第二部分为卷积神经网络，将二维图像提取特征信息映射到三维模型的embeddings上。但是在TL-embedding Network中，输入输出的体素模型大小为20*20*20，分辨率较低。
+
+<!--more-->
 
 ### （2017 SIGGRAPH）GRASS: Generative Recursive Autoencoders for Shape Sturctures （[论文链接](https://arxiv.org/pdf/1705.02090.pdf)）
 
@@ -53,6 +56,8 @@ PointNet难以捕获点云模型的局部特征，PointNet++网络主要由三�
 
 ## 三角网格（Mesh）
 
+### （2018 ECCV）Pixel2Mesh: Generating 3D Mesh Models from Single RGB Images （[论文链接](http://openaccess.thecvf.com/content_ECCV_2018/papers/Nanyang_Wang_Pixel2Mesh_Generating_3D_ECCV_2018_paper.pdf)）
+
 ### （2019 SIGGRAPH）SDM-NET: Deep Generative Network for Structured Deformable Mesh （[论文链接](https://arxiv.org/pdf/1908.04520.pdf)）
 
 论文提出了一种能够生成结构化可变形三角网格模型的网络结构，SDM-NET为两层VAE结构，第一层被称为PartVAE，用于对模型的每一部分几何特征的学习，将每一部分视为bounding box通过变形得到；第二层被称为Structured Part VAE(SP-VAE)，同时学习各个部分间的结构以及每一部分的几何特征。
@@ -70,3 +75,5 @@ DISN能够从二维的图像重建三维的模型，作者提出一种网络，�
 ### （2017 ICCV）3D-PRNN: Generating Shape Primitives with Recurrent Neural Networks （[论文链接](https://arxiv.org/pdf/1708.01648.pdf)）
 
 ### （2019 CVPR）Occupancy Networks: Learning 3D Reconstruction in Function Space （[论文链接](http://www.cvlibs.net/publications/Mescheder2019CVPR.pdf)）
+
+论文提出通过occupancy function来表示三维模型的方法，给定三维空间中的点，occupancy function判断该点是否位于三维模型内，论文提出用神经网络来拟合这一函数，函数二值的边界即表示三维模型的曲面。对于这一神经网络，输入为三维模型信息（图像、点云、mesh等）以及单个三维点的坐标，输出为0到1的实数，表示这一三维点被占用的概率。训练好的网络即可用于三维模型的生成。
