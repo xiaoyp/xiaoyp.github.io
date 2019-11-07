@@ -13,11 +13,13 @@ date: 2019-11-06 14:57:32
 
 论文提出了TL-embedding Network，给出了一种对三维模型的表示，这一表示既能够用于三维模型的生成，也能够从二维图像中提取出来。网络结构分为两个部分，第一部分为自动编码器，得到三维模型的embeddings；第二部分为卷积神经网络，将二维图像提取特征信息映射到三维模型的embeddings上。但是在TL-embedding Network中，输入输出的体素模型大小为20*20*20，分辨率较低。
 
-<!--more-->
-
 ### （2017 SIGGRAPH）GRASS: Generative Recursive Autoencoders for Shape Sturctures （[论文链接](https://arxiv.org/pdf/1705.02090.pdf)）
 
 论文中将三维模型中的parts以层次结构的形式进行组织并对三维模型的structure进行编码，对于三维物体的结构，作者采用OBBs的形式进行表达；具体的几何细节利用体素表达。GRASS网络结构由三部分组成，第一部分为自编码器，其中的网络结构基于递归神经网络（RvNN）实现，达到将三维物体的不同part合并的目的；第二部分为GAN，训练这一部分使得网络能够生成新的三维模型；第三部分为自编码器，用于对模型几何结构的编码与表示。但是，采用RvNN的结构会存在很多不适合的层次结构，对这一部分的计算会占用大量的计算资源，因此GRASS很难处理高分辨率的模型。
+
+### （2017 CVPR）OctNet: Learning Deep 3D Representations at High Resolutions （[论文链接](http://openaccess.thecvf.com/content_cvpr_2017/papers/Riegler_OctNet_Learning_Deep_CVPR_2017_paper.pdf)）
+
+### （2017 ICCV）Octree generating networks: Efficient convolutional architectures for high-resolution 3D outputs （[论文链接](http://openaccess.thecvf.com/content_ICCV_2017/papers/Tatarchenko_Octree_Generating_Networks_ICCV_2017_paper.pdf)）
 
 ### （2019 TOG）Global-to-Local Generative Model for 3D Shapes （[论文链接](https://vcc.tech/file/upload_file/image/research/att201809231254/G2L.pdf)）
 
