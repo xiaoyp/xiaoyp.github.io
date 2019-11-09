@@ -4,7 +4,8 @@ date: 2019-10-25 21:26:07
 tags:
     - point clouds
     - Shape Analysis
-category: CVPR
+    - CVPR
+category: 论文阅读笔记
 ---
 
 ## 参考论文

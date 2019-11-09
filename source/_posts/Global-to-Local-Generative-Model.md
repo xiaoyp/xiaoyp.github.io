@@ -3,7 +3,8 @@ title: TOG2019 Global-to-Local Generative Model
 date: 2019-10-26 20:13:27
 tags: 
     - voxel grids
-category: TOG
+    - TOG
+category: 论文阅读笔记
 ---
 
 ## 参考论文

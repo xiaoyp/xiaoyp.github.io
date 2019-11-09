@@ -4,7 +4,8 @@ date: 2019-10-23 15:04:29
 tags: 
     - voxel grids
     - Shape Analysis
-category: ECCV
+    - ECCV
+category: 论文阅读笔记
 ---
 
 ## object representation

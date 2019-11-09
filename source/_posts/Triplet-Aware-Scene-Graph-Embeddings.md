@@ -2,7 +2,8 @@
 title: ICCV2019 Triplet-Aware Scene Graph Embeddings
 date: 2019-10-28 17:02:38
 tags:
-category: ICCV
+    - ICCV
+category: 论文阅读笔记
 ---
 
 <!--https://github.com/danfeiX/scene-graph-TF-release-->

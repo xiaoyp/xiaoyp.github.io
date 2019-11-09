@@ -3,7 +3,8 @@ title: ICCV2019 PU-GAN
 date: 2019-10-31 14:33:25
 tags:
     - upsampling
-category: ICCV
+    - ICCV
+category: 论文阅读笔记
 ---
 
 ## 参考论文

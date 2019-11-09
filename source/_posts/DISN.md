@@ -3,9 +3,9 @@ title: NeurIPS2019 DISN
 date: 2019-11-05 14:10:42
 tags:
     - 3D reconstruction
-    - Signed Distance Functions
     - Mesh
-category: NeurIPS
+    - NeurIPS
+category: 论文阅读笔记
 ---
 
 ## 参考论文

@@ -4,7 +4,8 @@ date: 2019-10-24 10:13:47
 tags:
     - Shape Analysis
     - voxel grids
-category: SIGGRAPH
+    - SIGGRAPH
+category: 论文阅读笔记
 ---
 
 ## 参考论文

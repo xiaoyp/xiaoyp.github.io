@@ -3,7 +3,8 @@ title: ICCV2019 C3DPO
 date: 2019-11-03 20:16:20
 tags:
     - 3D reconstruction
-category: ICCV
+    - ICCV
+category: 论文阅读笔记
 ---
 
 ## 参考论文
