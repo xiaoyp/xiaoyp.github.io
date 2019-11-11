@@ -75,7 +75,7 @@ Pixel2Mesh从二维图像中提取特征信息将初始化的由Mesh表示的椭
 
 * **（2019 CVPR）Occupancy Networks: Learning 3D Reconstruction in Function Space （[论文链接](http://www.cvlibs.net/publications/Mescheder2019CVPR.pdf)）**
 
-论文提出通过occupancy function来表示三维模型的方法，给定三维空间中的点，occupancy function判断该点是否位于三维模型内，论文提出用神经网络来拟合这一函数，函数二值的边界即表示三维模型的曲面。对于这一神经网络，输入为三维模型信息（图像、点云、mesh等）以及单个三维点的坐标，输出为0到1的实数，表示这一三维点被占用的概率。训练好的网络即可用于三维模型的生成。
+论文提出通过occupancy function来表示三维模型的方法，给定三维空间中的点，occupancy function判断该点是否位于三维模型内，论文提出用神经网络来拟合这一函数，函数二值的边界即表示三维模型的曲面。对于这一神经网络，输入为三维模型信息（图像、点云、mesh等）以及单个三维点的坐标，输出为0到1的实数，表示这一三维点被占用的概率。
 
 * **（2019 CVPR）Learning Implicit Fields for Generative Shape Modeling （[论文链接](http://openaccess.thecvf.com/content_CVPR_2019/papers/Chen_Learning_Implicit_Fields_for_Generative_Shape_Modeling_CVPR_2019_paper.pdf)）**
 
