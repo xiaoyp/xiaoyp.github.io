@@ -61,6 +61,8 @@ PointNet难以捕获点云模型的局部特征，PointNet++网络主要由三�
 
 * **（2016 NIPS）Learing shape correspondence with anisotropic convolutional neural networks （[论文链接](http://papers.nips.cc/paper/6045-learning-shape-correspondence-with-anisotropic-convolutional-neural-networks.pdf)）**
 
+* **（2018 CVPR）AtlasNet: A Papier-Mache Approach to Learning 3D Surface Generation （[论文链接](https://arxiv.org/pdf/1802.05384.pdf)）**
+
 * **（2018 ECCV）Pixel2Mesh: Generating 3D Mesh Models from Single RGB Images （[论文链接](http://openaccess.thecvf.com/content_ECCV_2018/papers/Nanyang_Wang_Pixel2Mesh_Generating_3D_ECCV_2018_paper.pdf)）**
 
 Pixel2Mesh从二维图像中提取特征信息将初始化的由Mesh表示的椭球体通过coarse-to-fine变形为目标三维模型。对于二维图像特征的提取采用CNN，提取后的特征与mesh中顶点的坐标与特征相结合，经过图卷积神经网络G-ResNet得到变形后的结构，每次变形后，引入上池化层，对mesh的分辨率进行扩展，以便生成更细节的模型。
