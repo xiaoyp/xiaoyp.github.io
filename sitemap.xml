@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xiaoyp.github.io/2019/11/09/Ray-based-field-probing/</loc>
+    <loc>https://xiaoyp.github.io/2019/11/13/AtlasNet/</loc>
     
-    <lastmod>2019-11-11T04:27:55.588Z</lastmod>
+    <lastmod>2019-11-18T12:24:08.269Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://xiaoyp.github.io/2019/11/06/3DRepresentation/</loc>
     
-    <lastmod>2019-11-09T08:46:18.205Z</lastmod>
+    <lastmod>2019-11-13T09:08:22.365Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xiaoyp.github.io/2019/11/09/Ray-based-field-probing/</loc>
+    
+    <lastmod>2019-11-11T04:27:55.588Z</lastmod>
     
   </url>
   
