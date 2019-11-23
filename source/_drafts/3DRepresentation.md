@@ -13,6 +13,8 @@ date: 2019-11-06 14:57:32
 
 论文提出了TL-embedding Network，给出了一种对三维模型的表示，这一表示既能够用于三维模型的生成，也能够从二维图像中提取出来。网络结构分为两个部分，第一部分为自动编码器，得到三维模型的embeddings；第二部分为卷积神经网络，将二维图像提取特征信息映射到三维模型的embeddings上。但是在TL-embedding Network中，输入输出的体素模型大小为20\*20\*20，分辨率较低。
 
+* **（2016 ECCV）3D-R2N2: A unified approach for single and multi-view 3d object reconstruction （[论文链接](http://3d-r2n2.stanford.edu/main.pdf)）**
+
 <!--more-->
 
 * **（2017 SIGGRAPH）GRASS: Generative Recursive Autoencoders for Shape Sturctures （[论文链接](https://arxiv.org/pdf/1705.02090.pdf)）**
@@ -20,6 +22,8 @@ date: 2019-11-06 14:57:32
 论文中将三维模型中的parts以层次结构的形式进行组织并对三维模型的structure进行编码，对于三维物体的结构，作者采用OBBs的形式进行表达；具体的几何细节利用体素表达。GRASS网络结构由三部分组成，第一部分为自编码器，其中的网络结构基于递归神经网络（RvNN）实现，达到将三维物体的不同part合并的目的；第二部分为GAN，训练这一部分使得网络能够生成新的三维模型；第三部分为自编码器，用于对模型几何结构的编码与表示。但是，采用RvNN的结构会存在很多不适合的层次结构，对这一部分的计算会占用大量的计算资源，因此GRASS很难处理高分辨率的模型。
 
 * **（2017 CVPR）OctNet: Learning Deep 3D Representations at High Resolutions （[论文链接](http://openaccess.thecvf.com/content_cvpr_2017/papers/Riegler_OctNet_Learning_Deep_CVPR_2017_paper.pdf)）**
+
+作者为八叉树的表示方法设计了新的卷积网络的计算方法，包括卷积操作，池化操作以及上池化操作。由于传统的八叉树在模型分辨率较高的时候树的深度较深，因此不利于对体素数据的读取，为解决这一问题，论文中限制了octree的深度，使得octree的深度不超过三层，被称为shallow octree，通过二进制的形式对体素的划分情况进行存储，之后，shallow octree按照位置关系被放入划定的网格中。通过这一方式表示的体素模型虽然压缩程度下降了，但是依然可以使用1个向量表示之前的$8^3$个向量，且更利于神经网络的处理。
 
 * **（2017 ICCV）Octree generating networks: Efficient convolutional architectures for high-resolution 3D outputs （[论文链接](http://openaccess.thecvf.com/content_ICCV_2017/papers/Tatarchenko_Octree_Generating_Networks_ICCV_2017_paper.pdf)）**
 
@@ -45,7 +49,7 @@ PointNet难以捕获点云模型的局部特征，PointNet++网络主要由三�
 
 论文提出了一种基于折叠操作而建立的解码器用于将二维的网格点通过多次迭代操作最终折叠形成三维点云用于对三维模型的表示。模型中的编码器基于Graph，对点云中每个点的局部特征进行提取，最终得到512维的codeword，解码器将codeword复制后与二维网格点的位置相连，作为折叠操作的输入。
 
-* **（2019 SIGGRAPH）StructureNet: Hierarchical Graph Networks for 3D Shape Generation （[论文链接](https://arxiv.org/pdf/1908.00575.pdf)）**
+* **（2019 TOG）StructureNet: Hierarchical Graph Networks for 3D Shape Generation （[论文链接](https://arxiv.org/pdf/1908.00575.pdf)）**
 
 与GRASS方法相比，StructureNet采用图的形式描述模型的层次结构，首先通过模型的层次结构构建n叉树，再根据兄弟节点的关系（对称、连接等）连接对应的边。StructureNet采用基于图卷积的VAE对模型的Hierarchical Graph进行处理。
 
@@ -63,6 +67,8 @@ PointNet难以捕获点云模型的局部特征，PointNet++网络主要由三�
 
 * **（2018 CVPR）AtlasNet: A Papier-Mache Approach to Learning 3D Surface Generation （[论文链接](https://arxiv.org/pdf/1802.05384.pdf)）**
 
+论文提出利用一系列的二维平面映射到三维模型的局部来描述整个目标三维模型，类似于一个二维流形的地图集。AtlasNet由多个MLP组成，每一个MLP的输入为三维模型的特征向量x以及从二维网格上采样的点的坐标，输出为该点在三维空间中的位置。在三维模型生成方面，作者提出了直接由单位平面转为三维模型、PSR方法、取样时改为从三维球体上采样等三种方式用于生成三维模型。
+
 * **（2018 ECCV）Pixel2Mesh: Generating 3D Mesh Models from Single RGB Images （[论文链接](http://openaccess.thecvf.com/content_ECCV_2018/papers/Nanyang_Wang_Pixel2Mesh_Generating_3D_ECCV_2018_paper.pdf)）**
 
 Pixel2Mesh从二维图像中提取特征信息将初始化的由Mesh表示的椭球体通过coarse-to-fine变形为目标三维模型。对于二维图像特征的提取采用CNN，提取后的特征与mesh中顶点的坐标与特征相结合，经过图卷积神经网络G-ResNet得到变形后的结构，每次变形后，引入上池化层，对mesh的分辨率进行扩展，以便生成更细节的模型。
@@ -70,6 +76,10 @@ Pixel2Mesh从二维图像中提取特征信息将初始化的由Mesh表示的椭
 * **（2019 SIGGRAPH）SDM-NET: Deep Generative Network for Structured Deformable Mesh （[论文链接](https://arxiv.org/pdf/1908.04520.pdf)）**
 
 论文提出了一种能够生成结构化可变形三角网格模型的网络结构，SDM-NET为两层VAE结构，第一层被称为PartVAE，用于对模型的每一部分几何特征的学习，将每一部分视为bounding box通过变形得到；第二层被称为Structured Part VAE(SP-VAE)，同时学习各个部分间的结构以及每一部分的几何特征。
+
+* **(2019 CVPR) Mesh R-CNN （[论文链接](https://arxiv.org/pdf/1906.02739v1.pdf)）**
+
+本文针对与真实世界中的图片往往具有多个物体，而且具有复杂的遮挡以及光线等的影响，提出了一种新的针对真实世界图像的三维模型生成方法。作者利用Mask R-CNN对于图片物体的提取能力，在这一基础上添加了生成三角网格的分支，首先生成粗体素模型，再在体素模型的基础上生成更加细化的三角网格模型，这一方法使得最终生成的模型具有了多样的拓扑结构。在训练神经网络的loss function上面，作者使用了倒角损失函数以及法向量损失函数，并再次基础上添加了一个正则化项，防止网络退化。
 
 * **（ICCV 2019）Pixel2Mesh++: Multi-View 3D Mesh Generation via Deformation （[论文链接](https://arxiv.org/pdf/1908.01491.pdf)）**
 
