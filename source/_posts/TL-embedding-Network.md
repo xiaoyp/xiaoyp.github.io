@@ -3,7 +3,7 @@ title: 三维模型表示：TL-embedding Network
 date: 2019-10-23 15:04:29
 tags: 
     - voxel grids
-    - Shape Analysis
+    - 3D representation
     - ECCV
 category: 论文阅读笔记
 ---

@@ -38,7 +38,7 @@ FoldingNet的网络结构如下图所示：
 
 ### Folding-based Decoder Architecture
 
-解码器基于folding的操作进行设计，由编码器生成的512维向量复制m份，将含有m个点的二维网格点与codeword连接起来组成m*514维的矩阵作为decoder的输入，每一层folding的输出为m*3的矩阵，表示一个含有m个点的三维点云模型，之后再将这一点云模型与codeword相连接，作为下一层folding的输入。
+解码器基于folding的操作进行设计，由编码器生成的512维向量复制m份，将含有m个点的二维网格点与codeword连接起来组成m\*514维的矩阵作为decoder的输入，每一层folding的输出为m\*3的矩阵，表示一个含有m个点的三维点云模型，之后再将这一点云模型与codeword相连接，作为下一层folding的输入。
 
 ### Loss Function
 

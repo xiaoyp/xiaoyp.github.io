@@ -4,7 +4,7 @@ tags:
   - 3D reconstruction
   - 3D representation
 category: Summary
-date: 2019-11-06 14:57:32
+date: 2019-11-24 14:57:32
 ---
 
 ## 体素（Voxel Grids）
