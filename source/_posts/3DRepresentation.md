@@ -4,9 +4,12 @@ tags:
   - 3D representation
 category: Summary
 date: 2019-11-06 14:57:32
+top: True
 ---
 
 ## 体素（Voxel Grids）
+
+* **（2015 CVPR）3D ShapeNets: A Deep Representation for Volumetric Shapes （[论文链接](https://people.csail.mit.edu/khosla/papers/cvpr2015_wu.pdf)）**
 
 * **（2016 ECCV）Learning a predictable and generative vector representation for objects （[论文链接](https://arxiv.org/pdf/1603.08637.pdf)）**
 
