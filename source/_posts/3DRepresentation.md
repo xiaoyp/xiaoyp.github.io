@@ -17,6 +17,8 @@ top: True
 
 * **（2016 ECCV）3D-R2N2: A unified approach for single and multi-view 3d object reconstruction （[论文链接](http://3d-r2n2.stanford.edu/main.pdf)）**
 
+论文提出通过单张或者多张图片重新生成由体素表示的三维模型。神经网络将输入的图片看作一个序列，通过循环神经网络RNN对模型进行重建。
+
 <!--more-->
 
 * **（2017 SIGGRAPH）GRASS: Generative Recursive Autoencoders for Shape Sturctures （[论文链接](https://arxiv.org/pdf/1705.02090.pdf)）**
@@ -28,6 +30,8 @@ top: True
 作者为八叉树的表示方法设计了新的卷积网络的计算方法，包括卷积操作，池化操作以及上池化操作。由于传统的八叉树在模型分辨率较高的时候树的深度较深，因此不利于对体素数据的读取，为解决这一问题，论文中限制了octree的深度，使得octree的深度不超过三层，被称为shallow octree，通过二进制的形式对体素的划分情况进行存储，之后，shallow octree按照位置关系被放入划定的网格中。通过这一方式表示的体素模型虽然压缩程度下降了，但是依然可以使用1个向量表示之前的$8^3$个向量，且更利于神经网络的处理。
 
 * **（2017 ICCV）Octree generating networks: Efficient convolutional architectures for high-resolution 3D outputs （[论文链接](http://openaccess.thecvf.com/content_ICCV_2017/papers/Tatarchenko_Octree_Generating_Networks_ICCV_2017_paper.pdf)）**
+
+论文利用八叉树的结构递归地对三维模型进行生成，在递归过程中，网格中的八叉树节点被划分为“empty”，“filled”和“mixed”，被标记为“empty”与“filled”的节点划分完成，而标记为“mixed”的节点继续划分，且网络传递过程中，只将标记为“mixed”的节点特征信息传递到下一层。
 
 * **（2019 TOG）Global-to-Local Generative Model for 3D Shapes （[论文链接](https://vcc.tech/file/upload_file/image/research/att201809231254/G2L.pdf)）**
 
@@ -65,6 +69,8 @@ PointNet难以捕获点云模型的局部特征，PointNet++网络主要由三�
 
 * **（2015 ICCV）Geodesic Convolutional Neural Networks on Riemannian Manifolds （[论文链接](https://www.cv-foundation.org/openaccess/content_iccv_2015_workshops/w22/papers/Masci_Geodesic_Convolutional_Neural_ICCV_2015_paper.pdf)）**
 
+本文提出了定义在二维流形上的CNN模型，作者将三角网格中的每个点作为中心，提取对应的geometric patches，将其转换为极坐标的形式，再在patch上定义卷积操作，并对pathes离散化。卷积核同样被定义在极坐标上，为了消除歧义，在GCNN中，每个卷积核旋转$N_{\theta}$次，抵消极坐标中角度的不同而带来的歧义。GCNN与定义在欧氏空间中的卷积网络类似。
+
 * **（2016 NIPS）Learing shape correspondence with anisotropic convolutional neural networks （[论文链接](http://papers.nips.cc/paper/6045-learning-shape-correspondence-with-anisotropic-convolutional-neural-networks.pdf)）**
 
 * **（2018 CVPR）AtlasNet: A Papier-Mache Approach to Learning 3D Surface Generation （[论文链接](https://arxiv.org/pdf/1802.05384.pdf)）**
@@ -89,22 +95,32 @@ Point2Mesh++通过多张不同视角的图像生成模型，由粗糙到精细�
 
 ## Implicit Surfaces
 
-* **（2019 CVPR）DeepSDF: Learning Continuous Signed Distance Functions for Shape Representation （[论文链接](http://openaccess.thecvf.com/content_CVPR_2019/papers/Park_DeepSDF_Learning_Continuous_Signed_Distance_Functions_for_Shape_Representation_CVPR_2019_paper.pdf)）**
-
 * **（2019 CVPR）Occupancy Networks: Learning 3D Reconstruction in Function Space （[论文链接](http://www.cvlibs.net/publications/Mescheder2019CVPR.pdf)）**
 
 论文提出通过occupancy function来表示三维模型的方法，给定三维空间中的点，occupancy function判断该点是否位于三维模型内，论文提出用神经网络来拟合这一函数，函数二值的边界即表示三维模型的曲面。对于这一神经网络，输入为三维模型信息（图像、点云、mesh等）以及单个三维点的坐标，输出为0到1的实数，表示这一三维点被占用的概率。对于occupancy function $\phi(x)$，输入为三维空间中的点， 输出为该点位于三维模型内部的概率，这一函数等价于求$f(x, z)$，输入为三维空间中的点以及三维模型的信息。
 
 * **（2019 CVPR）Learning Implicit Fields for Generative Shape Modeling （[论文链接](http://openaccess.thecvf.com/content_CVPR_2019/papers/Chen_Learning_Implicit_Fields_for_Generative_Shape_Modeling_CVPR_2019_paper.pdf)）**
 
-* **（2019 NeurIPS）Learning to Infer Implicit Surfaces without 3D Supervision （[论文链接](https://arxiv.org/pdf/1911.00767.pdf)）**
-
-论文提出了一种在没有三维模型信息的条件下，仅通过二维图像进行监督训练的网络模型。网络结构较为简单，分为两部分，第一部分对二维图像进行编码，输出为图像的特征向量，记为z，之后，z与三维空间中的一个点p作为输入，送入网络的第二部分，第二部分输出为该点位于模型内部的概率$\phi(x)$。论文主要提出了通过ray probing的方法对三维空间中采样的锚点与图片对应的像素点进行比较，给出了一种新的对三维模型轮廓优化的代价函数。除此之外，论文提出了一种新的代价函数，用于对模型表面几何特征的优化。
+* **（2019 CVPR）DeepSDF: Learning Continuous Signed Distance Functions for Shape Representation （[论文链接](http://openaccess.thecvf.com/content_CVPR_2019/papers/Park_DeepSDF_Learning_Continuous_Signed_Distance_Functions_for_Shape_Representation_CVPR_2019_paper.pdf)）**
 
 * **（2019 NeurIPS）DISN: Deep Implicit Surface Network for High-quality Single-view 3D Reconstruction （[论文链接](https://arxiv.org/pdf/1905.10711.pdf)）**
 
 DISN能够从二维的图像重建三维的模型，作者提出一种网络，首先根据二维图像学习相机参数，再根据这些参数将三维网格点映射到二维图像上，提取图像的全局特征以及映射点的局部特征，根据这些特征预测其SDF值，再根据SDF值重建三维模型。由于DISN采用了带符号距离函数而不是二值函数表示三维点相对于平面的位置，且在网络中添加了局部特征并修改了代价函数的权重，使得DISN与之前方法相比能够生成更精细的局部细节。
 
-## Others
+* **（2019 NeurIPS）Learning to Infer Implicit Surfaces without 3D Supervision （[论文链接](https://arxiv.org/pdf/1911.00767.pdf)）**
+
+论文提出了一种在没有三维模型信息的条件下，仅通过二维图像进行监督训练的网络模型。网络结构较为简单，分为两部分，第一部分对二维图像进行编码，输出为图像的特征向量，记为z，之后，z与三维空间中的一个点p作为输入，送入网络的第二部分，第二部分输出为该点位于模型内部的概率$\phi(x)$。论文主要提出了通过ray probing的方法对三维空间中采样的锚点与图片对应的像素点进行比较，给出了一种新的对三维模型轮廓优化的代价函数。除此之外，论文提出了一种新的代价函数，用于对模型表面几何特征的优化。
+
+* **（3029 arXiv）BSP-Net: Generating Compact Meshes via Binary Space Partitioning （[论文链接](https://arxiv.xilesou.top/pdf/1911.06971.pdf)）**
+
+论文提出通过一系列凸多面体的组合来表示三维模型，组合方式通过BSP-tree来表示，BSP-tree分为三层：第一层表示为三维平面，将三维空间分割为内部和外部两部分；第二层为凸多面体，通过三维平面的组合得到封闭的凸多面体集合；第三层为组合层，在凸多面体集合中进行选择，得到最终的三维模型。不同于其他隐式曲面的方式，需要进行isosurface处理来提取三维曲面，BSP-Net方法能够直接通过多面体的组合得到三维模型，且能够表示三维模型中的sharp geometry feature。
+
+* **（2019 ICCV）Learning Shape Templates with Structured Implicit Functions （[论文链接](https://arxiv.xilesou.top/pdf/1904.06447.pdf)）**
+
+* **（2019 arXiv）Deep Structured Implicit Functions （[论文链接](https://arxiv.org/pdf/1912.06126.pdf)）**
+
+* **（2019 arXiv）NASA: Neural Articulated Shape Approximation（[论文链接](https://arxiv.org/pdf/1912.06126.pdf)）**
+
+## Other structured representation
 
 * **（2017 ICCV）3D-PRNN: Generating Shape Primitives with Recurrent Neural Networks （[论文链接](https://arxiv.org/pdf/1708.01648.pdf)）**

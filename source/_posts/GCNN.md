@@ -126,7 +126,7 @@ $$
 
 其中，$\hat{h}(\lambda_l) = \sum^N_{i=1}h(i)u^*_l(i)$是根据需要设计的卷积核$h$在Graph上的傅里叶变换。这一矩阵也可以被写为$U^Th$。
 
-Graph的信号x与卷积核h两者的傅里叶变换乘积即为$(U^Th)\odot(U^Tx)$（$\odot$表示Hadamard积，对于连个维度相同的向量、矩阵、张量进行对应位置的逐元素乘积运算），再乘以$U$求两者傅里叶变换乘积的逆变换，则求出卷积：
+Graph的信号x与卷积核h两者的傅里叶变换乘积即为$(U^Th)\odot(U^Tx)$（$\odot$表示Hadamard积，对于两个维度相同的向量、矩阵、张量进行对应位置的逐元素乘积运算），再乘以$U$求两者傅里叶变换乘积的逆变换，则求出卷积：
 
 $$
 (x * h)_G = U((U^Th)\odot(U^Tx))
@@ -140,7 +140,7 @@ $$
 
 因此，一种非参数的卷积核，很自然地被定义为$g_{\theta}(\Lambda) = diag(\theta)$。
 
-因此，卷积层被定义为$y_{output} = \sigma(Ug_{\theta}(\Lambda)U^Tx)$。根据这一定义，通过对卷积核参数初始化赋值后利用误差反向传播进行调增，x就是graph上对应于每个顶点的feature vector。但是，这一方法也存在弊端：首先，每一次前向传播，都需要计算$U, diag(\theta_l), U^T$三者的矩阵乘积，这需要比较大的计算复杂度，第二，they are not localized in space，第三，卷积核需要n个参数。
+因此，卷积层被定义为$y_{output} = \sigma(Ug_{\theta}(\Lambda)U^Tx)$。根据这一定义，通过对卷积核参数初始化赋值后利用误差反向传播进行调整，$x$就是graph上对应于每个顶点的feature vector。但是，这一方法也存在弊端：首先，每一次前向传播，都需要计算$U, diag(\theta_l), U^T$三者的矩阵乘积，这需要比较大的计算复杂度，第二，they are not localized in space，第三，卷积核需要n个参数。
 
 #### Polynomial parametrization for localized filters
 
