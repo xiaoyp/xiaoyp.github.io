@@ -73,6 +73,8 @@ PointNet难以捕获点云模型的局部特征，PointNet++网络主要由三�
 
 * **（2016 NIPS）Learing shape correspondence with anisotropic convolutional neural networks （[论文链接](http://papers.nips.cc/paper/6045-learning-shape-correspondence-with-anisotropic-convolutional-neural-networks.pdf)）**
 
+GCNN中，卷积核为了消除歧义采用将极坐标旋转随机角度的方法。而在这篇论文中，作者提出了ACNN，通过各向异性的热量核函数（anisotropic heat kernels）代替之前的patch operator，实现对非欧氏空间中的卷积操作。
+
 * **（2018 CVPR）AtlasNet: A Papier-Mache Approach to Learning 3D Surface Generation （[论文链接](https://arxiv.org/pdf/1802.05384.pdf)）**
 
 论文提出利用一系列的二维平面映射到三维模型的局部来描述整个目标三维模型，类似于一个二维流形的地图集。AtlasNet由多个MLP组成，每一个MLP的输入为三维模型的特征向量x以及从二维网格上采样的点的坐标，输出为该点在三维空间中的位置。在三维模型生成方面，作者提出了直接由单位平面转为三维模型、PSR方法、取样时改为从三维球体上采样等三种方式用于生成三维模型。
@@ -117,10 +119,18 @@ DISN能够从二维的图像重建三维的模型，作者提出一种网络，�
 
 * **（2019 ICCV）Learning Shape Templates with Structured Implicit Functions （[论文链接](https://arxiv.xilesou.top/pdf/1904.06447.pdf)）**
 
+本文提出SIF（Structured Implicit Functions）作为一种对三维模型曲面的隐式表示方法。作者将三维模型看作由多个shape elements组合而来，每个shape elements通过一个高斯函数来表示，这些函数相加来表示整个三维模型曲面，函数的参数通过神经网络进行学习。
+
 * **（2019 arXiv）Deep Structured Implicit Functions （[论文链接](https://arxiv.org/pdf/1912.06126.pdf)）**
 
+作者提出DSIF，在SIF的基础上进行了优化，每个shape element通过SIF粗略表示，再与DIF相乘对模型细节的表示进行优化。DIF（Deep Implicit Functions）通过神经网络Occupancy Network进行优化。
+
 * **（2019 arXiv）NASA: Neural Articulated Shape Approximation（[论文链接](https://arxiv.org/pdf/1912.06126.pdf)）**
+
+作者提出了三种不同的结构，利用有关节三维模型的变形信息，对三维模型进行表示。unstructured model(U)将模型看作一个整体，直接利用DeepSDF等方法对网络进行训练；piecewise non-rigid model（R）将模型看作由一组不可变形的元素组成，对每个元素利用变形信息分别进行训练，再将其组合；piecewise deformable model（D）将模型看作由一组可变形的元素组成，再对每个元素进行训练。
 
 ## Other structured representation
 
 * **（2017 ICCV）3D-PRNN: Generating Shape Primitives with Recurrent Neural Networks （[论文链接](https://arxiv.org/pdf/1708.01648.pdf)）**
+
+将三维模型粗略地看作由多个立方体组成，这些立方体被称为primitives，通过循环神经网络RNN按序列对primitives进行生成，得到最终地三维模型。
