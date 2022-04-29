@@ -32,7 +32,7 @@
     "hexo-server": "^1.0.0",
     "hexo-wordcount": "^6.0.1",
     "live2d-widget-model-tororo": "^1.0.5",
-    "markdown-it": "^10.0.0"
+    "markdown-it": "^12.3.2"
   },
   "devDependencies": {
     "hexo-generator-feed": "^2.1.0"
