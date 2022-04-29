@@ -10,7 +10,7 @@ keywords:
 author: xiaoyp
 language: zh-Hans
 email: xiaoypgk@163.com
-timezone:
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
