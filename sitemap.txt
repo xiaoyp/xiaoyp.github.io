@@ -1,3 +1,5 @@
+https://xiaoyp.github.io/categories/index.html
+https://xiaoyp.github.io/tags/index.html
 https://xiaoyp.github.io/2019/10/28/Triplet-Aware-Scene-Graph-Embeddings/
 https://xiaoyp.github.io/2019/10/23/TL-embedding-Network/
 https://xiaoyp.github.io/2019/11/09/Ray-based-field-probing/
@@ -11,8 +13,6 @@ https://xiaoyp.github.io/2019/11/05/DISN/
 https://xiaoyp.github.io/2019/11/03/c3dpo/
 https://xiaoyp.github.io/2019/11/24/BSP-Net/
 https://xiaoyp.github.io/2019/11/13/AtlasNet/
-https://xiaoyp.github.io/tags/index.html
-https://xiaoyp.github.io/categories/index.html
 https://xiaoyp.github.io/2019/10/28/GCNN/
 https://xiaoyp.github.io/2019/11/06/3DRepresentation/
 https://xiaoyp.github.io/
@@ -23,15 +23,15 @@ https://xiaoyp.github.io/tags/3D-reconstruction/
 https://xiaoyp.github.io/tags/NeurIPS/
 https://xiaoyp.github.io/tags/point-clouds/
 https://xiaoyp.github.io/tags/Shape-Analysis/
+https://xiaoyp.github.io/tags/Graph/
 https://xiaoyp.github.io/tags/voxel-grids/
 https://xiaoyp.github.io/tags/SIGGRAPH/
-https://xiaoyp.github.io/tags/Graph/
 https://xiaoyp.github.io/tags/TOG/
+https://xiaoyp.github.io/tags/hexo/
+https://xiaoyp.github.io/tags/melody-theme/
 https://xiaoyp.github.io/tags/ICCV/
 https://xiaoyp.github.io/tags/Implicit-Surface/
 https://xiaoyp.github.io/tags/ECCV/
-https://xiaoyp.github.io/tags/hexo/
-https://xiaoyp.github.io/tags/melody-theme/
 https://xiaoyp.github.io/categories/Summary/
 https://xiaoyp.github.io/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/
 https://xiaoyp.github.io/categories/Deep-Learning/

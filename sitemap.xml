@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xiaoyp.github.io/categories/index.html</loc>
+    
+    <lastmod>2024-01-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xiaoyp.github.io/tags/index.html</loc>
+    
+    <lastmod>2024-01-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xiaoyp.github.io/2019/10/28/Triplet-Aware-Scene-Graph-Embeddings/</loc>
     
     <lastmod>2024-01-16</lastmod>
@@ -119,24 +137,6 @@
   </url>
   
   <url>
-    <loc>https://xiaoyp.github.io/tags/index.html</loc>
-    
-    <lastmod>2024-01-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xiaoyp.github.io/categories/index.html</loc>
-    
-    <lastmod>2024-01-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xiaoyp.github.io/2019/10/28/GCNN/</loc>
     
     <lastmod>2024-01-16</lastmod>
@@ -213,6 +213,13 @@
   </url>
   
   <url>
+    <loc>https://xiaoyp.github.io/tags/Graph/</loc>
+    <lastmod>2024-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://xiaoyp.github.io/tags/voxel-grids/</loc>
     <lastmod>2024-01-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -227,14 +234,21 @@
   </url>
   
   <url>
-    <loc>https://xiaoyp.github.io/tags/Graph/</loc>
+    <loc>https://xiaoyp.github.io/tags/TOG/</loc>
     <lastmod>2024-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xiaoyp.github.io/tags/TOG/</loc>
+    <loc>https://xiaoyp.github.io/tags/hexo/</loc>
+    <lastmod>2024-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xiaoyp.github.io/tags/melody-theme/</loc>
     <lastmod>2024-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -256,20 +270,6 @@
   
   <url>
     <loc>https://xiaoyp.github.io/tags/ECCV/</loc>
-    <lastmod>2024-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xiaoyp.github.io/tags/hexo/</loc>
-    <lastmod>2024-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xiaoyp.github.io/tags/melody-theme/</loc>
     <lastmod>2024-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
