@@ -1,3 +1,4 @@
+https://xiaoyp.github.io/2019/11/06/3DRepresentation/
 https://xiaoyp.github.io/categories/index.html
 https://xiaoyp.github.io/tags/index.html
 https://xiaoyp.github.io/2019/10/28/Triplet-Aware-Scene-Graph-Embeddings/
@@ -14,7 +15,6 @@ https://xiaoyp.github.io/2019/11/03/c3dpo/
 https://xiaoyp.github.io/2019/11/24/BSP-Net/
 https://xiaoyp.github.io/2019/11/13/AtlasNet/
 https://xiaoyp.github.io/2019/10/28/GCNN/
-https://xiaoyp.github.io/2019/11/06/3DRepresentation/
 https://xiaoyp.github.io/
 https://xiaoyp.github.io/tags/3D-representation/
 https://xiaoyp.github.io/tags/Mesh/

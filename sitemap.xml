@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xiaoyp.github.io/2019/11/06/3DRepresentation/</loc>
+    
+    <lastmod>2024-01-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xiaoyp.github.io/categories/index.html</loc>
     
     <lastmod>2024-01-16</lastmod>
@@ -138,15 +147,6 @@
   
   <url>
     <loc>https://xiaoyp.github.io/2019/10/28/GCNN/</loc>
-    
-    <lastmod>2024-01-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xiaoyp.github.io/2019/11/06/3DRepresentation/</loc>
     
     <lastmod>2024-01-16</lastmod>
     
