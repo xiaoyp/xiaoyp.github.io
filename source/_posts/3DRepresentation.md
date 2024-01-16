@@ -4,7 +4,6 @@ tags:
   - 3D representation
 category: Summary
 date: 2019-11-06 14:57:32
-top: True
 ---
 
 ## 体素（Voxel Grids）
