@@ -84,22 +84,26 @@ search:
 server:
   compress: true
 
-markdown_it_plus:
-  highlight: true
-  html: true
-  xhtmlOut: true
-  breaks: true
-  langPrefix:
-  linkify: true
-  typographer:
-  quotes: “”‘’
-  pre_class: highlight
-  plugins:
-    - plugin:
-      name: '@neilsustc/markdown-it-katex'
-      enable: true
-      options: 
-        strict: false
+# markdown_it_plus:
+#   highlight: true
+#   html: true
+#   xhtmlOut: true
+#   breaks: true
+#   langPrefix:
+#   linkify: true
+#   typographer:
+#   quotes: “”‘’
+#   pre_class: highlight
+#   plugins:
+#     - plugin:
+#       name: '@renbaoshuo/markdown-it-katex'
+#       enable: true
+#       options: 
+#         strict: false
+
+markdown:
+    plugins:
+      - '@renbaoshuo/markdown-it-katex'
 
 live2d:
   enable: true
