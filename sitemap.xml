@@ -185,20 +185,6 @@
   </url>
   
   <url>
-    <loc>https://xiaoyp.github.io/tags/3D-reconstruction/</loc>
-    <lastmod>2024-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xiaoyp.github.io/tags/NeurIPS/</loc>
-    <lastmod>2024-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xiaoyp.github.io/tags/point-clouds/</loc>
     <lastmod>2024-01-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -213,7 +199,14 @@
   </url>
   
   <url>
-    <loc>https://xiaoyp.github.io/tags/Graph/</loc>
+    <loc>https://xiaoyp.github.io/tags/3D-reconstruction/</loc>
+    <lastmod>2024-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xiaoyp.github.io/tags/NeurIPS/</loc>
     <lastmod>2024-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -241,14 +234,7 @@
   </url>
   
   <url>
-    <loc>https://xiaoyp.github.io/tags/hexo/</loc>
-    <lastmod>2024-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xiaoyp.github.io/tags/melody-theme/</loc>
+    <loc>https://xiaoyp.github.io/tags/Graph/</loc>
     <lastmod>2024-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -270,6 +256,20 @@
   
   <url>
     <loc>https://xiaoyp.github.io/tags/ECCV/</loc>
+    <lastmod>2024-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xiaoyp.github.io/tags/hexo/</loc>
+    <lastmod>2024-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xiaoyp.github.io/tags/melody-theme/</loc>
     <lastmod>2024-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
