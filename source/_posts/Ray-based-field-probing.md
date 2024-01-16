@@ -6,6 +6,7 @@ tags:
     - 3D reconstruction
     - NeurIPS
 category: 论文阅读笔记
+cover: /img/RayBasedProbing.jpg
 ---
 
 ## 参考论文

@@ -5,6 +5,7 @@ tags:
     - 3D reconstruction
     - ICCV
 category: 论文阅读笔记
+cover: /img/C3DPO.jpg
 ---
 
 ## 参考论文

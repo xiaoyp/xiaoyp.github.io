@@ -5,6 +5,7 @@ tags:
     - Mesh
     - 3D representation
 category: 论文阅读笔记
+cover: /img/BSP-NetOutput.jpg
 ---
 
 ## 参考论文

@@ -5,6 +5,7 @@ tags:
     - Mesh
     - CVPR
 category: 论文阅读笔记
+cover: /img/AtlasNet3DGeneration.jpg
 ---
 
 ## 参考论文

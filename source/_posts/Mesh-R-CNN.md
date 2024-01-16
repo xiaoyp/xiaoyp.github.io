@@ -5,6 +5,7 @@ tags:
     - Mesh
     - CVPR
 category: 论文阅读笔记
+cover: /img/MeshRCNN.jpg
 ---
 
 ## 参考论文

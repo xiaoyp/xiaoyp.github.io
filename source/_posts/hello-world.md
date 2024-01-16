@@ -5,6 +5,7 @@ tag:
 	- hexo 
 	- melody-theme
 category: hexo
+cover: /img/butterfly.png
 ---
 Welcome to [Hexo](https://hexo.io/)! This is my very first post.
 

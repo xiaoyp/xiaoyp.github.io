@@ -6,6 +6,7 @@ tags:
     - Shape Analysis
     - CVPR
 category: 论文阅读笔记
+cover: /img/FoldingNet.jpg
 ---
 
 ## 参考论文

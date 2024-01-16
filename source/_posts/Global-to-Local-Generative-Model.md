@@ -5,6 +5,7 @@ tags:
     - voxel grids
     - TOG
 category: 论文阅读笔记
+cover: /img/G2L.jpg
 ---
 
 ## 参考论文

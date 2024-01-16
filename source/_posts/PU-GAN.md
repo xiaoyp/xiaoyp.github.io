@@ -5,6 +5,7 @@ tags:
     - point clouds
     - ICCV
 category: 论文阅读笔记
+cover: /img/pugan.jpg
 ---
 
 ## 参考论文

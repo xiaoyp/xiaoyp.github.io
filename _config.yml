@@ -8,7 +8,7 @@ subtitle:
 description: Xiaoyp's Blog
 keywords:
 author: xiaoyp
-language: zh-Hans
+language: zh-CN
 email: xiaoypgk@163.com
 timezone: 
 
@@ -74,7 +74,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: melody
+theme: butterfly
 
 search:
   path: search.xml
@@ -113,8 +113,8 @@ live2d:
     superSample: 2
     width: 150
     height: 300
-    position: right
-    hOffset: -10
+    position: left
+    hOffset: 10
     vOffset: -30
 
 # Deployment

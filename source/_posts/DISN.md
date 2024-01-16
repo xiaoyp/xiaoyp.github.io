@@ -6,6 +6,7 @@ tags:
     - Mesh
     - NeurIPS
 category: 论文阅读笔记
+cover: /img/DISN.jpg
 ---
 
 ## 参考论文

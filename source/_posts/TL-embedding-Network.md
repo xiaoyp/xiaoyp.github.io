@@ -6,6 +6,7 @@ tags:
     - 3D representation
     - ECCV
 category: 论文阅读笔记
+cover: /img/TL-embeddingNetwork.jpg
 ---
 
 ## object representation

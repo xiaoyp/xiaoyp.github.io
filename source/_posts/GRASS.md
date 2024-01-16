@@ -6,6 +6,7 @@ tags:
     - voxel grids
     - SIGGRAPH
 category: 论文阅读笔记
+cover: /img/GRASS.jpg
 ---
 
 ## 参考论文
